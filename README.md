@@ -53,15 +53,6 @@ Redis is essentially a large hashmap, where all data is stored according to key 
 - title
 - description
 
-## Issues and Resolutions :flashlight:
-
-**ERROR**: :gear:
-**RESOLUTION**: :key:
-
-| Issue                | Where it occurs | Possible solution | Actual solution |
-| -------------------- | :-------------: | :---------------: | :-------------: |
-| Creating a checklist |        H        |       2hrs        |     2.5hrs      |
-
 #### Code Snippets
 
 - [ ] HMSET -> set fields in the hash, that can be retrieved with HGET
