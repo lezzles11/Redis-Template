@@ -1,5 +1,5 @@
 {
-  "name": "redis",
+  "name": "redis_template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,5 +11,12 @@
     "tutorial"
   ],
   "author": "lesley",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "redis": "^2.7.1"
+  }
 }

@@ -8,6 +8,14 @@ The purpose of this repository is to be able to understand how to utilize redis 
 
 Redis is essentially a large hashmap, where all data is stored according to key and value.
 
+##### Types of data structures
+
+- Lists
+- Sets
+- Strings
+- Hashes
+- Sorted Sets
+
 ### User Stories :telescope:
 
 1. Users will be able to look through the various examples and understand how to utilize redis well.
@@ -18,42 +26,32 @@ Redis is essentially a large hashmap, where all data is stored according to key 
 | ----- | ------------------------------------------------------ | :------: | :------------: | :---------: |
 | x     | This checklist                                         |    H     |    10 mins     |   10 mins   |
 | x     | Redis Documentation                                    |    M     |    30 mins     |   10mins    |
-|       | Practice implementing something in redis               |    M     |    60 mins     |             |
 |       | Identify the keys that are needed to represent objects |    M     |    30 mins     |             |
-|       | Practice implementing something in redis               |    M     |    30 mins     |             |
-|       | Practice implementing something in redis               |    M     |    30 mins     |             |
+|       | Handlebars: Add Blog Page                              |    M     |    30 mins     |             |
+|       | Handlebars: Details for each blog                      |    M     |    30 mins     |             |
+|       | Handlebars: Search all blog                            |    M     |    30 mins     |             |
+| x     | Handlebars: Layouts                                    |    M     |    30 mins     |             |
+|       | Get Home Page                                          |    M     |    30 mins     |             |
+|       | Search all blogs                                       |    M     |    30 mins     |             |
+|       | Add Blog page                                          |    M     |    30 mins     |             |
+|       | Delete blog page                                       |    M     |    30 mins     |             |
+|       | Make sure everything works                             |    M     |    30 mins     |             |
 
-## Structure of Redis Data (Twitter Clone)
+## Structure of Redis Data (Blog Page)
 
-#### User Table
+#### Routes
 
-- userid (atomic INCR operation)
-- username
-- password
-- set of
-- [ ] To create a new user
+| Route            | Where it occurs | METHOD |
+| ---------------- | :-------------: | :----: |
+| /blog/add        |        H        |  Add   |
+| /blog/delete/:id |        H        | Delete |
+| /blog/search     |        H        | Search |
 
-```
-// use the next_user_id to always get unique id for new user
-INCR next_user_id => 1000
+#### Blog Table
 
-//
-HMSET user:1000 username antirez password p1pp0
-HSET users antirez 1000
-```
-
-#### Followers (Sets)
-
-- [ ]The purpose of this data structure is to see followers / followings - in this case, we use sets (beacuse you can't have two of the same user - we use a sorted set here)
-
-```
-// KEYS
-followers:1000 => Sorted Set of uids of all the followers users
-following:1000 => Sorted Set of uids of all the following users
-ZADD followers:1000 1401267618 1234 => Add user 1234 with time 1401267618
-
-
-```
+- id
+- title
+- description
 
 ## Issues and Resolutions :flashlight:
 

@@ -1,0 +1,9 @@
+<h1>{{blog.title}}
+
+</h1>
+<p>
+    {{blog.description}} [{{blog.id}}]</p>
+<a class="btn btn-default pull-left" href="/">Back</a>
+<form method="POST" action="/blog/delete/{{blog.id}}?_method=DELETE">
+    <input type="submit" class="btn btn-danger pull-right" value="Delete">
+</form>
