@@ -26,16 +26,16 @@ Redis is essentially a large hashmap, where all data is stored according to key 
 | ----- | ------------------------------------------------------ | :------: | :------------: | :---------: |
 | x     | This checklist                                         |    H     |    10 mins     |   10 mins   |
 | x     | Redis Documentation                                    |    M     |    30 mins     |   10mins    |
-|       | Identify the keys that are needed to represent objects |    M     |    30 mins     |             |
-|       | Handlebars: Add Blog Page                              |    M     |    30 mins     |             |
-|       | Handlebars: Details for each blog                      |    M     |    30 mins     |             |
-|       | Handlebars: Search all blog                            |    M     |    30 mins     |             |
+| x     | Identify the keys that are needed to represent objects |    M     |    30 mins     |             |
+| x     | Handlebars: Add Blog Page                              |    M     |    30 mins     |             |
+| x     | Handlebars: Details for each blog                      |    M     |    30 mins     |             |
+| x     | Handlebars: Search all blog                            |    M     |    30 mins     |             |
 | x     | Handlebars: Layouts                                    |    M     |    30 mins     |             |
-|       | Get Home Page                                          |    M     |    30 mins     |             |
-|       | Search all blogs                                       |    M     |    30 mins     |             |
-|       | Add Blog page                                          |    M     |    30 mins     |             |
-|       | Delete blog page                                       |    M     |    30 mins     |             |
-|       | Make sure everything works                             |    M     |    30 mins     |             |
+| x     | Get Home Page                                          |    M     |    30 mins     |             |
+| x     | Search all blogs                                       |    M     |    30 mins     |             |
+| x     | Add Blog page                                          |    M     |    30 mins     |             |
+| x     | Delete blog page                                       |    M     |    30 mins     |             |
+| x     | Make sure everything works                             |    M     |    30 mins     |             |
 
 ## Structure of Redis Data (Blog Page)
 
