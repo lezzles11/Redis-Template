@@ -41,11 +41,11 @@ Redis is essentially a large hashmap, where all data is stored according to key 
 
 #### Routes
 
-| Route            | Where it occurs | METHOD |
-| ---------------- | :-------------: | :----: |
-| /blog/add        |        H        |  Add   |
-| /blog/delete/:id |        H        | Delete |
-| /blog/search     |        H        | Search |
+| Route            |    Where it occurs     |                             METHOD                              | Server explanation                                                             |
+| ---------------- | :--------------------: | :-------------------------------------------------------------: | ------------------------------------------------------------------------------ |
+| /blog/add        |   addblog.handlebars   |                method="post" action="/blog/add"                 | passes in the id, title and description (and then in the server, pushes it in) |
+| /blog/delete/:id |   details.handlebars   | method="POST" action="/blog/delete/{{blog.id}}?\_method=DELETE" | client.del(req.params.id)                                                      |
+| /blog/search     | searchblogs.handlebars |               method="post" action="/blog/search"               | get the id, and then find it in the database                                   |
 
 #### Blog Table
 
@@ -164,6 +164,9 @@ RPOP friends
 ```
 
 #### What is one thing that I learned from doing this project? :books:
+
+- Looking at examples are key (and then playing around with them after)
+- Redis is pretty straightforward and easy to use!
 
 #### Credits :recycle:
 
